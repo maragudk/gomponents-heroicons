@@ -1,0 +1,12 @@
+package solid
+
+import (
+	g "github.com/maragudk/gomponents"
+
+	h "github.com/maragudk/gomponents-heroicons"
+)
+
+func CurrencyYen(children ...g.Node) g.Node {
+	return h.Solid(g.Group(children),
+		g.Raw(`<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.858 5.485a1 1 0 00-1.715 1.03L7.633 9H7a1 1 0 100 2h1.834l.166.277V12H7a1 1 0 100 2h2v1a1 1 0 102 0v-1h2a1 1 0 100-2h-2v-.723l.166-.277H13a1 1 0 100-2h-.634l1.492-2.486a1 1 0 10-1.716-1.029L10.034 9h-.068L7.858 5.485z" clip-rule="evenodd"/>`))
+}
