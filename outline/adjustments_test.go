@@ -3,9 +3,9 @@ package outline_test
 import (
 	"testing"
 
-	"github.com/maragudk/gomponents/assert"
 	. "github.com/maragudk/gomponents/html"
 
+	"github.com/maragudk/gomponents-heroicons/internal/assert"
 	"github.com/maragudk/gomponents-heroicons/outline"
 )
 

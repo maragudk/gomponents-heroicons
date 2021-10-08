@@ -4,8 +4,9 @@ import (
 	"testing"
 
 	"github.com/maragudk/gomponents-heroicons/solid"
-	"github.com/maragudk/gomponents/assert"
 	. "github.com/maragudk/gomponents/html"
+
+	"github.com/maragudk/gomponents-heroicons/internal/assert"
 )
 
 func TestAdjustments(t *testing.T) {

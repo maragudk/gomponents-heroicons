@@ -3,11 +3,11 @@ package heroicons_test
 import (
 	"testing"
 
-	"github.com/maragudk/gomponents/assert"
 	. "github.com/maragudk/gomponents/html"
 	"github.com/maragudk/gomponents/svg"
 
 	heroicons "github.com/maragudk/gomponents-heroicons"
+	"github.com/maragudk/gomponents-heroicons/internal/assert"
 )
 
 func TestOutline(t *testing.T) {
