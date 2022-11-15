@@ -8,5 +8,5 @@ import (
 
 func Check(children ...g.Node) g.Node {
 	return h.Outline(g.Group(children),
-		g.Raw(`<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>`))
+		g.Raw(`<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>`))
 }

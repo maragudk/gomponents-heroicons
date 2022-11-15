@@ -8,5 +8,5 @@ import (
 
 func Bookmark(children ...g.Node) g.Node {
 	return h.Outline(g.Group(children),
-		g.Raw(`<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>`))
+		g.Raw(`<path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"/>`))
 }

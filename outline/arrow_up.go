@@ -8,5 +8,5 @@ import (
 
 func ArrowUp(children ...g.Node) g.Node {
 	return h.Outline(g.Group(children),
-		g.Raw(`<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>`))
+		g.Raw(`<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"/>`))
 }

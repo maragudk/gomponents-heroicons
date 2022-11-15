@@ -8,5 +8,5 @@ import (
 
 func Minus(children ...g.Node) g.Node {
 	return h.Outline(g.Group(children),
-		g.Raw(`<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>`))
+		g.Raw(`<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"/>`))
 }
