@@ -38,6 +38,9 @@ jobs:
       - name: Build
         run: go build -v ./...
 
+      - name: Build V2
+        run: go build -v v2/...
+
       - name: Test
         if: ${{ matrix.go != '1.16' }}
         run: go test -v -coverprofile=coverage.txt -shuffle on ./...
@@ -45,6 +48,14 @@ jobs:
       - name: Test
         if: ${{ matrix.go == '1.16' }}
         run: go test -v -coverprofile=coverage.txt ./...
+
+      - name: Test V2
+        if: ${{ matrix.go != '1.16' }}
+        run: go test -v -coverprofile=coverage.txt -shuffle on v2/...
+
+      - name: Test V2
+        if: ${{ matrix.go == '1.16' }}
+        run: go test -v -coverprofile=coverage.txt v2/...
 
   lint:
     name: Lint
