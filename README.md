@@ -15,3 +15,5 @@ To get v1:
 ```shell
 go get -u github.com/maragudk/gomponents-heroicons
 ```
+
+Made in 🇩🇰 by [maragu](https://www.maragu.dk), maker of [online Go courses](https://www.golang.dk/).
