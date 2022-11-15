@@ -24,6 +24,9 @@ jobs:
           - 1.17
           - 1.18
           - 1.19
+        version:
+          - "."
+          - "v2"
 
     steps:
       - name: Checkout
@@ -36,26 +39,15 @@ jobs:
           check-latest: true
 
       - name: Build
-        run: go build -v ./...
-
-      - name: Build V2
-        run: go build -v v2/...
+        run: go build -v ${{ matrix.version }}/...
 
       - name: Test
         if: ${{ matrix.go != '1.16' }}
-        run: go test -v -coverprofile=coverage.txt -shuffle on ./...
+        run: go test -v -shuffle on ${{ matrix.version }}/...
 
       - name: Test
         if: ${{ matrix.go == '1.16' }}
-        run: go test -v -coverprofile=coverage.txt ./...
-
-      - name: Test V2
-        if: ${{ matrix.go != '1.16' }}
-        run: go test -v -coverprofile=coverage.txt -shuffle on v2/...
-
-      - name: Test V2
-        if: ${{ matrix.go == '1.16' }}
-        run: go test -v -coverprofile=coverage.txt v2/...
+        run: go test -v ${{ matrix.version }}/...
 
   lint:
     name: Lint
