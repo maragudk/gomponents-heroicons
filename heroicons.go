@@ -1,26 +1,25 @@
 package heroicons
 
 import (
-	g "github.com/maragudk/gomponents"
+	. "github.com/maragudk/gomponents"
 	. "github.com/maragudk/gomponents/html"
-	"github.com/maragudk/gomponents/svg"
 )
 
-func Outline(children ...g.Node) g.Node {
+func Outline(children ...Node) Node {
 	return SVG(
-		svg.ViewBox("0 0 24 24"),
-		svg.Fill("none"),
-		svg.Stroke("currentColor"),
+		Attr("viewBox", "0 0 24 24"),
+		Attr("fill", "none"),
+		Attr("stroke", "currentColor"),
 		Aria("hidden", "true"),
-		g.Group(children),
+		Group(children),
 	)
 }
 
-func Solid(children ...g.Node) g.Node {
+func Solid(children ...Node) Node {
 	return SVG(
-		svg.ViewBox("0 0 20 20"),
-		svg.Fill("currentColor"),
+		Attr("viewBox", "0 0 20 20"),
+		Attr("fill", "currentColor"),
 		Aria("hidden", "true"),
-		g.Group(children),
+		Group(children),
 	)
 }
