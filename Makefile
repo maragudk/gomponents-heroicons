@@ -1,13 +1,4 @@
-.PHONY: benchmark cover lint test
-
-benchmark:
-	go test -bench=.
-
-cover:
-	go tool cover -html=cover.out
-
-lint:
-	golangci-lint run
-
+.PHONY: test
 test:
-	go test -coverprofile=cover.out -shuffle on ./...
+	go test -shuffle on ./...
+	cd v2 && go test -shuffle on ./...
