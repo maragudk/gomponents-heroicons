@@ -1,19 +1,16 @@
 # gomponents + heroicons
 
+<img src="logo.png" alt="Logo" width="300" align="right">
+
+[![GoDoc](https://pkg.go.dev/badge/maragu.dev/gomponents-heroicons)](https://pkg.go.dev/maragu.dev/gomponents-heroicons)
+[![Go](https://github.com/maragudk/gomponents-heroicons/actions/workflows/ci.yml/badge.svg)](https://github.com/maragudk/gomponents-heroicons/actions/workflows/ci.yml)
+
 [Heroicons](https://heroicons.com) for [gomponents](https://www.gomponents.com).
 
-Heroicons has two version: v1 and v2. This library supports both.
-
-To get the newest v2:
-
 ```shell
-go get github.com/maragudk/gomponents-heroicons/v2@v2
+go get maragu.dev/gomponents-heroicons/v3@v3
 ```
 
-To get v1:
+Made with ✨sparkles✨ by [maragu](https://www.maragu.dev/).
 
-```shell
-go get github.com/maragudk/gomponents-heroicons
-```
-
-Made in 🇩🇰 by [maragu](https://www.maragu.dk), maker of [online Go courses](https://www.golang.dk/).
+Does your company depend on this project? [Contact me at markus@maragu.dk](mailto:markus@maragu.dk?Subject=Supporting%20your%20project) to discuss options for a one-time or recurring invoice to ensure its continued thriving.

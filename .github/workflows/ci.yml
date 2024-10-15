@@ -29,6 +29,7 @@ jobs:
         version:
           - "."
           - "v2"
+          - "v3"
 
     steps:
       - name: Checkout
